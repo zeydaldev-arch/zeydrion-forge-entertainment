@@ -176,3 +176,18 @@ footer {
     gap: 12px;
   }
 }
+.logo-symbol {
+  display: inline-block;
+  position: relative;
+  font-size: 35px;
+  color: #dce6f4;
+  margin-right: 8px;
+}
+
+.logo-symbol b {
+  position: absolute;
+  font-size: 13px;
+  color: #438fff;
+  left: 10px;
+  top: 10px;
+}
