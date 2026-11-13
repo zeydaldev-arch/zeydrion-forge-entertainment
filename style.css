@@ -323,3 +323,35 @@ body {
     animation: none;
   }
 }
+
+/* ZEYDRION Moving Star Particles */
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(2px 2px at 10% 20%, #ffffff 99%, transparent),
+    radial-gradient(2px 2px at 30% 70%, #4da3ff 99%, transparent),
+    radial-gradient(3px 3px at 50% 35%, #ffffff 99%, transparent),
+    radial-gradient(2px 2px at 70% 80%, #4da3ff 99%, transparent),
+    radial-gradient(2px 2px at 90% 15%, #ffffff 99%, transparent),
+    radial-gradient(2px 2px at 80% 45%, #4da3ff 99%, transparent);
+
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  opacity: 0.65;
+  animation: zeydrionStars 20s linear infinite;
+}
+
+@keyframes zeydrionStars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-35px);
+  }
+}
