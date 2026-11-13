@@ -387,3 +387,18 @@ body {
     display: none;
   }
 }
+
+/* ZEYDRION Brand Card Reveal */
+
+.brand-card.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.brand-card.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
