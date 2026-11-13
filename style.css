@@ -179,16 +179,25 @@ footer {
 .logo-symbol {
   display: inline-block;
   position: relative;
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.logo-symbol .crescent {
+  position: absolute;
+  left: 0;
+  top: -5px;
   font-size: 35px;
   color: #dce6f4;
-  margin-right: 8px;
 }
 
 .logo-symbol b {
   position: absolute;
-  font-size: 15px;
-  color: #438fff;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: #438fff;
 }
