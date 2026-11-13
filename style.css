@@ -185,19 +185,15 @@ footer {
   vertical-align: middle;
 }
 
-.logo-symbol .crescent {
-  position: absolute;
-  left: 0;
-  top: -5px;
-  font-size: 35px;
-  color: #dce6f4;
-}
-
-.logo-symbol b {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 15px;
+.logo-symbol {
+  display: inline-grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #438fff;
+  border-radius: 50%;
   color: #438fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 8px;
 }
