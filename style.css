@@ -430,11 +430,52 @@ html {
 }
 /* ZEYDRION Main Hero Background */
 
-.hero {
+
+/* ZEYDRION GLOBAL BACKGROUND */
+
+body {
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
+      rgba(5, 11, 24, 0.72),
+      rgba(5, 11, 24, 0.82)
     ),
-    url("hero-bg.png") center center / cover no-repeat;
+    url("hero-bg.png") center center / cover fixed no-repeat;
+  background-color: #050b18;
 }
+
+/* HERO SECTION */
+
+.hero {
+  background: transparent;
+}
+
+/* TRANSPARENT SECTIONS */
+
+.about,
+.brands,
+.contact {
+  background: rgba(5, 11, 24, 0.35);
+}
+
+/* BRAND CARDS */
+
+.brand-card {
+  background: rgba(11, 23, 48, 0.78);
+}
+
+/* HEADER */
+
+.header {
+  background: rgba(5, 11, 24, 0.82);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+/* MOBILE BACKGROUND */
+
+@media (max-width: 800px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
