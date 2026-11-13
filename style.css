@@ -1,0 +1,178 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #070d1b;
+  color: #f2f6fc;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  border-bottom: 1px solid #23334b;
+}
+
+.logo {
+  color: #d6e1f0;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+  color: #b9c8dc;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hero {
+  min-height: 650px;
+  padding: 110px 10%;
+  background:
+    radial-gradient(circle at 80% 40%, #173b68, transparent 35%),
+    #091326;
+}
+
+.symbol {
+  font-size: 100px;
+  color: #dce6f4;
+  position: relative;
+  width: fit-content;
+}
+
+.symbol span {
+  position: absolute;
+  font-size: 35px;
+  color: #438fff;
+  left: 35px;
+  top: 35px;
+}
+
+.eyebrow {
+  color: #438fff;
+  letter-spacing: 3px;
+  font-size: 11px;
+}
+
+h1 {
+  font-size: clamp(38px, 7vw, 75px);
+  line-height: 1.1;
+}
+
+h1 span, h2 span {
+  color: #438fff;
+}
+
+.hero p {
+  max-width: 550px;
+  color: #aebdd0;
+  line-height: 1.8;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 22px;
+  border: 1px solid #438fff;
+  color: white;
+  text-decoration: none;
+}
+
+section:not(.hero) {
+  padding: 90px 10%;
+}
+
+h2 {
+  font-size: clamp(30px, 5vw, 52px);
+}
+
+.muted {
+  color: #8294ad;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+article {
+  background: #101e34;
+  border: 1px solid #263d5d;
+  padding: 30px;
+  min-height: 240px;
+}
+
+article h3 {
+  color: #6eabff;
+}
+
+article p {
+  color: #aebdd0;
+  line-height: 1.8;
+}
+
+article small {
+  color: #78aef5;
+  font-size: 10px;
+}
+
+.slogan {
+  background: #0c1c32;
+  text-align: center;
+}
+
+#contact a {
+  color: #8dbbff;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 8%;
+  color: #8294ad;
+  border-top: 1px solid #23334b;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 90px 7%;
+  }
+
+  section:not(.hero) {
+    padding: 65px 7%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
