@@ -32,6 +32,7 @@ body {
   background: rgba(5, 11, 24, 0.82);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
+  }
 .logo {
   display: flex;
   align-items: center;
