@@ -176,14 +176,6 @@ footer {
     gap: 12px;
   }
 }
-.logo-symbol {
-  display: inline-block;
-  position: relative;
-  width: 35px;
-  height: 35px;
-  margin-right: 8px;
-  vertical-align: middle;
-}
 
 .logo-symbol {
   display: inline-grid;
