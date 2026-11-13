@@ -398,3 +398,32 @@ backdrop-filter: blur(15px);
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ZEYDRION Futuristic Scrollbar */
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #287bdb #050d1c;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050d1c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #4da3ff,
+    #1554a5
+  );
+  border-radius: 10px;
+  border: 1px solid #0a1b35;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #69b5ff;
+}
