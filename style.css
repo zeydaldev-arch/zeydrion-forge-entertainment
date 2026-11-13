@@ -428,3 +428,13 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #69b5ff;
 }
+/* ZEYDRION Main Hero Background */
+
+.hero {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("hero-bg.png") center center / cover no-repeat;
+}
