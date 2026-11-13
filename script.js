@@ -22,3 +22,23 @@ document.addEventListener("mousemove", (event) => {
 document.addEventListener("mouseleave", () => {
   cursorGlow.style.opacity = "0";
 });
+
+// ZEYDRION Brand Card Animation
+
+const brandCards = document.querySelectorAll(".brand-card");
+
+const cardObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      cardObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+brandCards.forEach((card) => {
+  card.classList.add("reveal");
+  cardObserver.observe(card);
+});
