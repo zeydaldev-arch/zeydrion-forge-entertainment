@@ -452,3 +452,192 @@ body {
 .brand-card {
   background: var(--navy-light);
 }
+
+/* =====================================
+   ON THE THRESHOLD OF DARKNESS
+   ZEYDAL GAMING
+===================================== */
+
+.otod-story {
+  background: #070b13;
+  color: #e5eaf2;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  line-height: 1.7;
+}
+
+.otod-story * {
+  box-sizing: border-box;
+}
+
+.otod-hero {
+  min-height: 620px;
+  padding: 110px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(3, 7, 15, 0.82), rgba(3, 7, 15, 0.96)),
+    radial-gradient(circle at center, #17345b 0%, #070b13 70%);
+  border-bottom: 1px solid #243c5b;
+}
+
+.otod-label {
+  color: #65b8ff;
+  font-size: 13px;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+}
+
+.otod-hero h1 {
+  color: #ffffff;
+  font-size: clamp(38px, 7vw, 76px);
+  line-height: 1.1;
+  letter-spacing: 4px;
+  margin: 0;
+  text-shadow: 0 0 25px rgba(40, 140, 255, 0.35);
+}
+
+.otod-hero h2 {
+  color: #8bbce9;
+  font-size: 22px;
+  letter-spacing: 7px;
+  margin-top: 25px;
+}
+
+.otod-hero p {
+  color: #b8c5d6;
+  font-size: 17px;
+  max-width: 650px;
+  margin: 20px auto 35px;
+}
+
+.otod-button {
+  display: inline-block;
+  padding: 14px 32px;
+  color: #ffffff;
+  background: #145b9c;
+  border: 1px solid #58a9f5;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+}
+
+.otod-button:hover {
+  background: #247fc9;
+  box-shadow: 0 0 25px rgba(48, 145, 255, 0.4);
+}
+
+.otod-content {
+  max-width: 1150px;
+  margin: auto;
+  padding: 80px 25px;
+}
+
+.otod-content h2 {
+  color: #70baff;
+  font-size: 27px;
+  letter-spacing: 3px;
+  margin: 65px 0 25px;
+  border-bottom: 1px solid #263e5a;
+  padding-bottom: 15px;
+}
+
+.otod-content p {
+  color: #bdc8d7;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.otod-characters,
+.otod-chapters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.otod-character,
+.otod-chapter {
+  background: linear-gradient(145deg, #111d2d, #0a101b);
+  border: 1px solid #263d59;
+  padding: 28px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.otod-character:hover,
+.otod-chapter:hover {
+  transform: translateY(-5px);
+  border-color: #55a9f5;
+  box-shadow: 0 8px 25px rgba(0, 100, 200, 0.12);
+}
+
+.otod-character h3,
+.otod-chapter h3 {
+  color: #ffffff;
+  font-size: 21px;
+  letter-spacing: 2px;
+  margin-top: 0;
+}
+
+.otod-chapter span {
+  color: #64b5ff;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.otod-ending {
+  text-align: center;
+  margin-top: 90px;
+  padding: 65px 25px;
+  background: #0d1725;
+  border: 1px solid #263d59;
+  border-radius: 8px;
+}
+
+.otod-ending h2 {
+  color: #ffffff;
+  border: none;
+  margin: 0 0 20px;
+  font-size: clamp(23px, 4vw, 36px);
+  letter-spacing: 3px;
+}
+
+.otod-ending span {
+  display: inline-block;
+  color: #65b8ff;
+  letter-spacing: 5px;
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+/* MOBİL UYUMLULUK */
+
+@media (max-width: 600px) {
+  .otod-hero {
+    min-height: 520px;
+    padding: 80px 18px;
+  }
+
+  .otod-hero h2 {
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+
+  .otod-content {
+    padding: 45px 18px;
+  }
+
+  .otod-content h2 {
+    font-size: 22px;
+  }
+
+  .otod-character,
+  .otod-chapter {
+    padding: 22px;
+  }
+}
