@@ -59,8 +59,11 @@ backdrop-filter: blur(15px);
 
 .navigation {
   display: flex;
-  gap: 28px;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .navigation a {
