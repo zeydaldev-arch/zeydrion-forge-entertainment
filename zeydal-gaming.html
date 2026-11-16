@@ -602,8 +602,7 @@
       ✕ HİKÂYEYİ KAPAT
     </button>
 
-    <section class="otod-story" id="echoes-below-story">
-
+  <section class="eb-story" id="echoes-below-story">
       <div class="otod-hero">
 
         <span class="otod-label">
@@ -618,9 +617,10 @@
           Ne kadar derine inersen, o kadar az şey bilirsin.
         </p>
 
-        <button
-          type="button"
-          class="otod-button"
+       <button
+  type="button"
+  class="eb-close"
+  onclick="closeEchoesBelow()"
           onclick="document.getElementById('eob-about').scrollIntoView({behavior:'smooth'})">
           HİKÂYEYİ KEŞFET
         </button>
