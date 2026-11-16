@@ -831,3 +831,201 @@ body {
     padding: 22px;
   }
 }
+
+/* ==========================================
+   ECHOES BELOW
+   ZEYDAL GAMING ORIGINAL GAME
+========================================== */
+
+#echoes-below-modal {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#echoes-below-modal .eb-story {
+  width: 100%;
+  background: #050b18;
+  color: #f5f8ff;
+  overflow: hidden;
+  line-height: 1.8;
+}
+
+#echoes-below-modal .eb-hero {
+  min-height: 580px;
+  padding: 100px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 80%,
+      rgba(0, 110, 190, 0.35), transparent 55%),
+    linear-gradient(180deg, #061a30, #020711 90%);
+  border-bottom: 1px solid #245078;
+}
+
+#echoes-below-modal .eb-label {
+  color: #65b8ff;
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+}
+
+#echoes-below-modal .eb-hero h1 {
+  color: #ffffff;
+  font-size: clamp(40px, 8vw, 82px);
+  letter-spacing: 5px;
+  line-height: 1.1;
+  text-shadow: 0 0 30px rgba(50, 150, 255, 0.55);
+}
+
+#echoes-below-modal .eb-hero h2 {
+  color: #9bcdf5;
+  font-size: clamp(15px, 3vw, 23px);
+  letter-spacing: 6px;
+  margin-top: 22px;
+}
+
+#echoes-below-modal .eb-hero p {
+  color: #c4d0df;
+  margin: 25px 0 35px;
+}
+
+#echoes-below-modal .eb-button {
+  padding: 14px 30px;
+  color: white;
+  background: #145b9c;
+  border: 1px solid #58a9f5;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+}
+
+#echoes-below-modal .eb-button:hover {
+  background: #247fc9;
+  box-shadow: 0 0 25px rgba(48, 145, 255, 0.4);
+}
+
+#echoes-below-modal .eb-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 25px;
+}
+
+#echoes-below-modal .eb-content h2 {
+  color: #70baff;
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin: 60px 0 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #263e5a;
+}
+
+#echoes-below-modal .eb-content p {
+  color: #bdc8d7;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#echoes-below-modal .eb-characters,
+#echoes-below-modal .eb-chapters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+#echoes-below-modal .eb-character,
+#echoes-below-modal .eb-chapter {
+  padding: 27px;
+  background: linear-gradient(145deg, #111d2d, #080f1b);
+  border: 1px solid #263d59;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+#echoes-below-modal .eb-character:hover,
+#echoes-below-modal .eb-chapter:hover {
+  transform: translateY(-5px);
+  border-color: #55a9f5;
+  box-shadow: 0 8px 25px rgba(0, 100, 200, 0.15);
+}
+
+#echoes-below-modal .eb-character h3,
+#echoes-below-modal .eb-chapter h3 {
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+#echoes-below-modal .eb-chapter span {
+  color: #64b5ff;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+#echoes-below-modal .eb-ending {
+  margin-top: 80px;
+  padding: 60px 25px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at center,
+      rgba(0, 90, 160, 0.2), transparent 70%),
+    #080f1b;
+  border: 1px solid #294866;
+  border-radius: 8px;
+}
+
+#echoes-below-modal .eb-ending h2 {
+  color: #ffffff;
+  border: none;
+  margin: 0 0 20px;
+  font-size: clamp(25px, 4vw, 38px);
+}
+
+#echoes-below-modal .eb-ending h3 {
+  color: #70baff;
+  margin-top: 30px;
+  letter-spacing: 3px;
+}
+
+#echoes-below-modal .eb-ending span {
+  display: inline-block;
+  color: #65b8ff;
+  letter-spacing: 6px;
+  margin-top: 30px;
+}
+
+#echoes-below-modal .eb-close {
+  padding: 12px 25px;
+  margin-bottom: 15px;
+  color: white;
+  background: #10233a;
+  border: 1px solid #438fff;
+  cursor: pointer;
+}
+
+#echoes-below-modal .eb-close:hover {
+  background: #145b9c;
+}
+
+@media (max-width: 600px) {
+  #echoes-below-modal .eb-hero {
+    min-height: 480px;
+    padding: 75px 18px;
+  }
+
+  #echoes-below-modal .eb-hero h2 {
+    letter-spacing: 3px;
+  }
+
+  #echoes-below-modal .eb-content {
+    padding: 40px 18px;
+  }
+
+  #echoes-below-modal .eb-character,
+  #echoes-below-modal .eb-chapter {
+    padding: 21px;
+  }
+}
