@@ -66,26 +66,29 @@
   </footer>
 
   <script>
-    function sendApplication(event) {
-      event.preventDefault();
+   function sendApplication(event) {
+  event.preventDefault();
 
-      const form = event.target;
-      const data = new FormData(form);
+  const form = event.target;
+  const data = new FormData(form);
 
-      const subject = "ZEYDAL GAMING - İş Birliği Başvurusu";
+  const subject = "ZEYDAL GAMING - İş Birliği Başvurusu";
 
-      const body =
-        "Marka: ZEYDAL GAMING\n" +
-        "Ad Soyad / Şirket: " + data.get("name") + "\n" +
-        "E-posta: " + data.get("email") + "\n" +
-        "İş Birliği Türü: " + data.get("type") + "\n\n" +
-        "Proje Açıklaması:\n" + data.get("message");
+  const body =
+    "Marka: ZEYDAL GAMING\n" +
+    "Ad Soyad / Şirket: " + data.get("name") + "\n" +
+    "E-posta: " + data.get("email") + "\n" +
+    "İş Birliği Türü: " + data.get("type") + "\n\n" +
+    "Proje Açıklaması:\n" + data.get("message");
 
-      window.location.href =
-        "mailto:zeydal.dev@gmail.com" +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(body);
-    }
+  const gmailURL =
+    "https://mail.google.com/mail/?view=cm&fs=1" +
+    "&to=" + encodeURIComponent("zeydal.dev@gmail.com") +
+    "&su=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent(body);
+
+  window.location.href = gmailURL;
+}
   </script>
 
 </body>
