@@ -66,11 +66,13 @@ backdrop-filter: blur(15px);
   white-space: nowrap;
 }
 
-.navigation a {
-  color: var(--silver);
-  text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s ease;
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .navigation a:hover {
