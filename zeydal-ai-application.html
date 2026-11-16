@@ -1,1 +1,91 @@
 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEYDAL AI | İş Birliği Başvurusu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h2>ZEYDRION FORGE</h2>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="partnership.html">İş Birliği</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <p class="eyebrow">ZEYDAL AI</p>
+    <h1>Yapay Zekânın Geleceğini Birlikte İnşa Edelim</h1>
+    <p>
+      ZEYDAL AI; yapay zekâ, akıllı yazılımlar ve
+      yeni nesil dijital çözümler geliştirmeyi hedefler.
+      Projenizi ve iş birliği teklifinizi bize iletin.
+    </p>
+  </section>
+
+  <section class="section brands" id="applications">
+    <article class="brand-card">
+      <h2>ZEYDAL AI İş Birliği Başvurusu</h2>
+      <p>Başvurunuzu aşağıdaki form üzerinden iletebilirsiniz.</p>
+
+      <form onsubmit="sendApplication(event)">
+        <input name="name" type="text"
+          placeholder="Ad Soyad / Şirket" required>
+
+        <input name="email" type="email"
+          placeholder="E-posta adresiniz" required>
+
+        <select name="type" required>
+          <option value="">İş birliği türü seçin</option>
+          <option>Teknoloji ortaklığı</option>
+          <option>Yazılım geliştirme</option>
+          <option>Yapay zekâ projesi</option>
+          <option>Yatırım ortaklığı</option>
+          <option>Diğer</option>
+        </select>
+
+        <textarea name="message"
+          placeholder="Projenizi veya teklifinizi açıklayın"
+          required></textarea>
+
+        <button type="submit">BAŞVURUYU GÖNDER</button>
+      </form>
+    </article>
+  </section>
+
+  <footer>
+    <p>© 2026 ZEYDRION FORGE ENTERTAINMENT</p>
+    <p>Build the Future. Forge the Impossible.</p>
+  </footer>
+
+  <script>
+    function sendApplication(event) {
+      event.preventDefault();
+
+      const form = event.target;
+      const data = new FormData(form);
+
+      const subject = "ZEYDAL AI - İş Birliği Başvurusu";
+
+      const body =
+        "Marka: ZEYDAL AI\n" +
+        "Ad Soyad / Şirket: " + data.get("name") + "\n" +
+        "E-posta: " + data.get("email") + "\n" +
+        "İş Birliği Türü: " + data.get("type") + "\n\n" +
+        "Proje Açıklaması:\n" + data.get("message");
+
+      window.location.href =
+        "mailto:zeydal.dev@gmail.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+    }
+  </script>
+
+</body>
+</html>
+
