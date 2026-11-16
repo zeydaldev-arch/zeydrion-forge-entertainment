@@ -1091,3 +1091,26 @@ body {
   background: #287fe8;
   box-shadow: 0 0 15px rgba(40, 127, 232, 0.4);
 }
+
+/* PARTNERSHIP BRAND LINKS */
+
+#our-brands .brand-card a.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 22px;
+  background: #1765c5;
+  color: #ffffff !important;
+  border: 1px solid #438cff;
+  border-radius: 7px;
+  text-decoration: none !important;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  visibility: visible;
+  opacity: 1;
+}
+
+#our-brands .brand-card a.btn:hover {
+  background: #287fe8;
+  box-shadow: 0 0 15px rgba(40, 127, 232, 0.4);
+}
