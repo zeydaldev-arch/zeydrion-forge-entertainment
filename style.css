@@ -1029,3 +1029,65 @@ body {
     padding: 21px;
   }
 }
+
+/* ZEYDRION - PARTNERSHIP FORM DESIGN */
+
+#applications form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+#applications input,
+#applications select,
+#applications textarea {
+  width: 100%;
+  padding: 14px;
+  background: #101c35;
+  color: #ffffff;
+  border: 1px solid #31558a;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#applications input::placeholder,
+#applications textarea::placeholder {
+  color: #aab8cc;
+}
+
+#applications input:focus,
+#applications select:focus,
+#applications textarea:focus {
+  border-color: #398bff;
+  box-shadow: 0 0 10px rgba(57, 139, 255, 0.25);
+}
+
+#applications select option {
+  background: #101c35;
+  color: #ffffff;
+}
+
+#applications textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+#applications form button {
+  padding: 14px;
+  background: linear-gradient(135deg, #1765c5, #123b78);
+  color: #ffffff;
+  border: 1px solid #438cff;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#applications form button:hover {
+  background: #287fe8;
+  box-shadow: 0 0 15px rgba(40, 127, 232, 0.4);
+}
