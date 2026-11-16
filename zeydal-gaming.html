@@ -198,11 +198,14 @@
   <p>Hikâyeyi görüntülemek için tıkla.</p>
 </article>
 
-    <article class="brand-card">
-      <h3>04. Echoes Below</h3>
-      <p>Aşağıdaki Yankılar</p>
-      <span>GAME PROJECT 04</span>
-    </article>
+    
+<article class="brand-card" onclick="document.getElementById('echoes-below-modal').style.display='block'">
+  <h3>04. Echoes Below</h3>
+  <p>Aşağıdaki Yankılar</p>
+  <span>GAME PROJECT 04</span>
+  <p>Hikâyeyi görüntülemek için tıkla.</p>
+</article>
+
 
     <article class="brand-card">
       <h3>05. Iron Revenant</h3>
@@ -579,7 +582,393 @@
 
       </div>
     </section>
+<!-- =====================================
+     ECHOES BELOW - STORY MODAL
+     ZEYDAL GAMING ORIGINAL GAME
+===================================== -->
 
+<div id="echoes-below-modal"
+     style="display:none; position:fixed; inset:0; z-index:99999;
+     background:rgba(0,0,0,0.97); overflow-y:auto; padding:30px 15px;">
+
+  <div style="max-width:1100px; margin:30px auto;">
+
+    <button
+      onclick="document.getElementById('echoes-below-modal').style.display='none'"
+      style="padding:12px 25px; margin-bottom:15px; cursor:pointer;">
+      ✕ HİKÂYEYİ KAPAT
+    </button>
+
+    <section class="otod-story" id="echoes-below-story">
+
+      <!-- HERO -->
+
+      <div class="otod-hero">
+
+        <span class="otod-label">
+          ZEYDAL GAMING ORIGINAL GAME
+        </span>
+
+        <h1>ECHOES BELOW</h1>
+
+        <h2>AŞAĞIDAKİ YANKILAR</h2>
+
+        <p>
+          Ne kadar derine inersen, o kadar az şey bilirsin.
+        </p>
+
+        <a href="#eob-about" class="otod-button">
+          HİKÂYEYİ KEŞFET
+        </a>
+
+      </div>
+
+      <!-- STORY -->
+
+      <div class="otod-content" id="eob-about">
+
+        <h2>OYUNUN HİKÂYESİ</h2>
+
+        <p>
+          Yıl 2049. İnsanlık, okyanusların derinliklerinde
+          yeni enerji kaynakları ve bilinmeyen yaşam
+          biçimleri araştırmaktadır.
+        </p>
+
+        <p>
+          Bu çalışmaların en önemlilerinden biri,
+          Pasifik Okyanusu'nun derinliklerinde kurulan
+          NEREUS-9 araştırma istasyonudur.
+        </p>
+
+        <p>
+          Araştırmacılar, okyanus tabanında keşfettikleri
+          olağan dışı enerji kaynağına OSYZED adını verir.
+          Ancak OSYZED sıradan bir enerji kaynağı değildir.
+          İnsanların sinir sistemiyle etkileşime girebilir,
+          elektriksel sinyalleri algılayabilir ve
+          anıları taklit edebilir.
+        </p>
+
+        <p>
+          İlk deneyler başarılı görünür. Ancak zamanla
+          istasyondaki çalışanlar birbirlerinin anılarını
+          görmeye ve hiç tanımadıkları insanların
+          seslerini duymaya başlar.
+        </p>
+
+        <p>
+          Bir gece NEREUS-9 ile dış dünya arasındaki
+          bütün iletişim kesilir. İstasyondaki çalışanlar
+          kaybolur ve araştırma merkezi terk edilir.
+        </p>
+
+        <p>
+          Aradan 11 yıl geçer. Eski bir deniz kurtarma
+          görevlisi olan Kaptan Elias Ward, NEREUS-9'dan
+          gelen otomatik bir yardım sinyali alır.
+        </p>
+
+        <p>
+          Sinyalde yalnızca şu cümle vardır:
+        </p>
+
+        <p><strong>
+          "Bizi aşağıda bırakmayın. O hâlâ bizi dinliyor."
+        </strong></p>
+
+        <p>
+          Elias, özel bir kurtarma ekibiyle birlikte
+          istasyona gönderilir. Ancak istasyona ulaştığında
+          bütün ekibi kaybolur. Elias, karanlık denizin
+          altında tek başına kalmıştır.
+        </p>
+
+        <p>
+          Bir süre sonra telsizinden bir kadın sesi duyulur:
+        </p>
+
+        <p><strong>
+          "Elias... sonunda geri döndün."
+        </strong></p>
+
+        <h2>ANA KARAKTERLER</h2>
+
+        <div class="otod-characters">
+
+          <article class="otod-character">
+            <h3>ELIAS WARD</h3>
+            <p><strong>Ana Karakter</strong></p>
+            <p>
+              35 yaşında eski deniz kurtarma uzmanı.
+              NEREUS-9'a gönderilen kurtarma ekibinin
+              lideridir. 11 yıl önceki felaketle
+              kişisel bir bağlantısı vardır.
+              Ancak geçmişine dair anıları değişmiştir.
+            </p>
+          </article>
+
+          <article class="otod-character">
+            <h3>DR. MAYA REN</h3>
+            <p><strong>Baş Araştırmacı</strong></p>
+            <p>
+              OSYZED projesinin başındaki bilim insanıdır.
+              Organizmanın insan beyniyle etkileşimini
+              keşfetmiştir. Felaket gecesinde yaptığı
+              deneyler istasyonun kaderini değiştirmiştir.
+            </p>
+          </article>
+
+          <article class="otod-character">
+            <h3>NOAH KELLER</h3>
+            <p><strong>Baş Mühendis</strong></p>
+            <p>
+              NEREUS-9'un enerji ve yaşam destek
+              sistemlerinden sorumludur. Felaket
+              gecesinde OSYZED ile birleşmiş ve
+              insan bedeninde büyük bir değişime uğramıştır.
+            </p>
+          </article>
+
+          <article class="otod-character">
+            <h3>SARA VOSS</h3>
+            <p><strong>İletişim Uzmanı</strong></p>
+            <p>
+              İstasyonun iletişim sistemlerinden sorumludur.
+              Felaketten sonra hayatta kalmış ve yıllarca
+              yardım çağrısı göndermeye çalışmıştır.
+            </p>
+          </article>
+
+          <article class="otod-character">
+            <h3>THE DIVER</h3>
+            <p><strong>Derinlikteki Yabancı</strong></p>
+            <p>
+              İstasyonun su basmış bölümlerinde görülen
+              insansı varlıktır. Gerçekte Noah Keller'ın
+              OSYZED ile etkileşiminden sonra dönüşmüş
+              hâlidir.
+            </p>
+          </article>
+
+          <article class="otod-character">
+            <h3>OSYZED</h3>
+            <p><strong>Bilinmeyen Yaşam</strong></p>
+            <p>
+              Okyanus tabanında keşfedilen eski bir
+              organizmadır. İnsanların düşüncelerini,
+              anılarını ve seslerini algılayabilir.
+              İnsanlarla iletişim kurmaya çalışırken
+              onların bedenlerine zarar verebilir.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- CHAPTERS -->
+
+        <h2>CHAPTER'LAR</h2>
+
+        <div class="otod-chapters">
+
+          <article class="otod-chapter">
+            <span>CHAPTER 01</span>
+            <h3>THE DESCENT</h3>
+            <p>Derinliğe İniş</p>
+            <p>
+              Elias ve kurtarma ekibi NEREUS-9 araştırma
+              istasyonuna ulaşır. İstasyonun ana girişinde
+              hiçbir yaşam belirtisi yoktur.
+            </p>
+            <p>
+              Güvenlik kayıtlarında çalışanların tuhaf
+              davranışları görülür. Elias, kontrol odasında
+              OSYZED'in uyanmakta olduğunu belirten
+              eski bir mesaj bulur.
+            </p>
+            <p>
+              Bölümün sonunda istasyonun dışındaki
+              karanlık suda insansı bir siluet belirir.
+            </p>
+          </article>
+
+          <article class="otod-chapter">
+            <span>CHAPTER 02</span>
+            <h3>THE SILENT STATION</h3>
+            <p>Sessiz İstasyon</p>
+            <p>
+              Elias istasyonun yaşam alanlarını ve personel
+              odalarını araştırır. Çalışanların odalarında
+              aynı gizemli sembolü bulur.
+            </p>
+            <p>
+              Sara telsiz üzerinden Elias'a ulaşır.
+              Ancak iletişim merkezine varıldığında
+              Sara ortada yoktur.
+            </p>
+            <p>
+              Geriye yalnızca bir ses kaydı kalmıştır:
+              "Elias, buraya neden geldiğini hatırlamıyorsun.
+              Ama ben hatırlıyorum."
+            </p>
+          </article>
+
+          <article class="otod-chapter">
+            <span>CHAPTER 03</span>
+            <h3>THE OSYZED PROJECT</h3>
+            <p>OSYZED Projesi</p>
+            <p>
+              Elias araştırma laboratuvarına ulaşır.
+              Dr. Maya Ren'in günlüklerinde OSYZED'in
+              insan beynindeki elektriksel sinyalleri
+              algılayabildiğini öğrenir.
+            </p>
+            <p>
+              Noah'ın son deney kayıtlarını bulur.
+              Noah, OSYZED'in bulunduğu bölmeye girmiştir.
+              Ancak görüntüler bir anda bozulur.
+            </p>
+            <p>
+              Son karede Noah'ın arkasında
+              başka bir insan silueti belirir.
+            </p>
+          </article>
+
+          <article class="otod-chapter">
+            <span>CHAPTER 04</span>
+            <h3>THE LOST CREW</h3>
+            <p>Kayıp Mürettebat</p>
+            <p>
+              Elias, istasyonun dışındaki eski araştırma
+              gemisine ulaşır. Burada 11 yıl önceki
+              felaketin ilk görüntülerini bulur.
+            </p>
+            <p>
+              Sara'nın gönderdiği bir kayıt,
+              Noah'ın OSYZED ile birleştiğini
+              ve artık eskisi gibi olmadığını ortaya çıkarır.
+            </p>
+            <p>
+              Bölümün sonunda The Diver, Elias'ın
+              karşısına çıkar ve konuşur:
+              "Beni neden bıraktın?"
+            </p>
+          </article>
+
+          <article class="otod-chapter">
+            <span>CHAPTER 05</span>
+            <h3>BELOW THE SURFACE</h3>
+            <p>Yüzeyin Altında</p>
+            <p>
+              Elias, OSYZED'in bulunduğu okyanus
+              tabanındaki devasa yarığa iner.
+              Burada insan yapımı olmayan eski yapılar
+              keşfeder.
+            </p>
+            <p>
+              OSYZED'in milyonlarca yıldır okyanusun
+              derinliklerinde var olduğu anlaşılır.
+            </p>
+            <p>
+              Maya'nın kayıtları, felaketin nasıl
+              başladığını açıklar. Elias ise 11 yıl
+              önce NEREUS-9'da bulunduğunu öğrenir.
+            </p>
+          </article>
+
+          <article class="otod-chapter">
+            <span>CHAPTER 06</span>
+            <h3>THE FINAL DEPTH</h3>
+            <p>Son Derinlik</p>
+            <p>
+              Elias, OSYZED'in merkezine ulaşır.
+              Burada Sara'yı bulur ve 11 yıl önceki
+              felaketin bütün gerçeklerini öğrenir.
+            </p>
+            <p>
+              Elias, geçmişte NEREUS-9'da görev yapan
+              ilk kurtarma ekibinin bir üyesidir.
+              Maya onu kurtarmış ancak yaşananlara
+              dair anıları değiştirilmiştir.
+            </p>
+            <p>
+              The Diver'ın Noah olduğu kesinleşir.
+              OSYZED, Elias ile bağlantı kurarak
+              ona geçmişin bütün görüntülerini gösterir.
+            </p>
+            <p>
+              Elias son enerji çekirdeğine ulaşır.
+              Sistemi kapatarak OSYZED'in bağlantısını
+              kesmeye karar verir.
+            </p>
+            <p>
+              Noah'ın son insan bilinciyle söylediği
+              "Teşekkür ederim" sözleri duyulur.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- ONE FINAL -->
+
+        <div class="otod-ending">
+
+          <h2>THE LAST SIGNAL</h2>
+          <p><strong>SON SİNYAL</strong></p>
+
+          <p>
+            Elias ve Sara son kurtarma kapsülüne ulaşır.
+            OSYZED'in enerji bağlantısı kesilir.
+            NEREUS-9'un bütün sistemleri durur.
+          </p>
+
+          <p>
+            Kurtarma kapsülü okyanus yüzeyine çıkar.
+            İkili hayatta kalmıştır.
+          </p>
+
+          <p>
+            Elias okyanusa bakarken Sara yanına gelir.
+          </p>
+
+          <p>
+            SARA: "Bitti mi?"
+          </p>
+
+          <p>
+            ELIAS: "Bilmiyorum. Ama artık kimse oraya inmeyecek."
+          </p>
+
+          <p>
+            Kamera yavaşça okyanusun derinliklerine iner.
+            NEREUS-9'un karanlık kalıntıları görünür.
+          </p>
+
+          <p>
+            Bir süre sonra deniz tabanındaki küçük
+            bir ışık yeniden yanar.
+          </p>
+
+          <h3>OSYZED – SIGNAL DETECTED</h3>
+
+          <p>
+            Son bir fısıltı duyulur:
+          </p>
+
+          <h2>"ELIAS..."</h2>
+
+          <span>THE END</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+</div>
+
+<!-- END ECHOES BELOW STORY -->
   </div>
 </div>
 </body>
