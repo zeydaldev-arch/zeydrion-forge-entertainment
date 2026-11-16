@@ -1003,13 +1003,15 @@ function openEchoesBelow() {
   border: 1px solid #64748b;
   border-radius: 14px;
   box-shadow: 0 0 35px rgba(59,130,246,.15);
+  position: relative;
 }
 
 #iron-revenant-modal .ir-hero {
   text-align: center;
-  padding: 55px 15px;
+  padding: 55px 15px 35px 15px;
   border-bottom: 1px solid #475569;
   background: radial-gradient(circle, #263449, #0b1220 70%);
+  border-radius: 10px 10px 0 0;
 }
 
 #iron-revenant-modal h1 {
@@ -1060,19 +1062,21 @@ function openEchoesBelow() {
   margin: 20px 0;
 }
 
-#iron-revenant-modal .ir-close {
-  display: block;
-  margin: 30px auto 0;
-  padding: 13px 35px;
-  color: white;
+/* Üst Kapatma Düğmesi Stili */
+#iron-revenant-modal .ir-top-close {
   background: #1d4ed8;
+  color: white;
   border: 1px solid #60a5fa;
+  padding: 10px 22px;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: background 0.2s;
 }
 
-#iron-revenant-modal .ir-close:hover {
+#iron-revenant-modal .ir-top-close:hover {
   background: #2563eb;
 }
 
@@ -1093,6 +1097,11 @@ function openEchoesBelow() {
      onclick="if(event.target === this) closeIronRevenant()">
 
   <article class="ir-story">
+
+    <!-- EN ÜSTTEKİ KAPATMA DÜĞMESİ -->
+    <button class="ir-top-close" type="button" onclick="closeIronRevenant()">
+      ✕ HİKÂYEYİ KAPAT
+    </button>
 
     <header class="ir-hero">
       <span class="ir-label">ZEYDAL GAMING · GAME PROJECT 05</span>
@@ -1121,7 +1130,7 @@ function openEchoesBelow() {
 
     <h2>KAEL VOSS'UN ÖLÜMÜ</h2>
 
-    <p>Kael Voss, birçok askerî operasyona katılmış deneyimli bir askerdir. Son görevinde ekibiyle birlikte Vanther'ın gizli araştırma tesisine gönderilir.</p>
+    <p>Kael Voss, birçok askerî operasyona katılmış deneyimli bir askerdır. Son görevinde ekibiyle birlikte Vanther'ın gizli araştırma tesisine gönderilir.</p>
 
     <p>Burada insan askerlerin mekanik savaş makinelerine dönüştürüldüğü deneyleri keşfeder. Ekibi güvenlik birliklerinin saldırısına uğrar. Arkadaşları öldürülür ve Kael ağır yaralanır.</p>
 
@@ -1129,7 +1138,7 @@ function openEchoesBelow() {
 
     <div class="ir-quote">"İnsan bedenleri artık savaşmak için yeterli değil."</div>
 
-    <h2>Yeniden Doğuş</h2>
+    <h2>YENİDEN DOĞUŞ</h2>
 
     <p>Kael gözlerini açtığında artık eski bedeninde değildir. Göğsü, omurgası, kolları ve bacakları gelişmiş mekanik parçalarla değiştirilmiştir. Kalbinin bulunduğu yerde bir enerji çekirdeği vardır.</p>
 
@@ -1207,7 +1216,7 @@ function openEchoesBelow() {
       KAEL: "Belki bedenim değişti. Ama kararlarım hâlâ bana ait."
     </div>
 
-    <p>PROMETHEUS, Kael'in kontrol modülünü etkinleştirerek bedenini kilitler. Kael geçmişindeki bütün anılarıyla yüzleşir. Bu kez onlardan kaçmaz.</p>
+    <p>PROMETHEUS, Kael'or kontrol modülünü etkinleştirerek bedenini kilitler. Kael geçmişindeki bütün anılarıyla yüzleşir. Bu kez onlardan kaçmaz.</p>
 
     <p>Kendi iradesiyle kontrol sistemine karşı koyar ve yeniden hareket etmeye başlar. Enerji çekirdeğini kullanarak PROMETHEUS'un ana sistemine saldırır.</p>
 
@@ -1237,7 +1246,7 @@ function openEchoesBelow() {
 
     <p>Mira, Kael'i ayağa kaldırır. Birlikte yıkılmış şehrin dışına doğru yürümeye başlarlar.</p>
 
-    <p>Kael'in görüş ekranı giderek kararır. Enerji çekirdeğinin ışığı yavaşça söner.</p>
+    <p>Kael's görüş ekranı giderek kararır. Enerji çekirdeğinin ışığı yavaşça söner.</p>
 
     <div class="ir-quote" style="text-align:center; border-left:0;">
       SYSTEM SHUTDOWN<br><br>
@@ -1252,11 +1261,6 @@ function openEchoesBelow() {
         HE CHOSE TO FIGHT.
       </p>
     </div>
-
-    <button class="ir-close" type="button"
-            onclick="closeIronRevenant()">
-      ✕ HİKÂYEYİ KAPAT
-    </button>
 
   </article>
 </div>
@@ -1286,5 +1290,6 @@ document.addEventListener('keydown', function(event) {
 });
 </script>
 <!-- IRON REVENANT STORY END -->
+  
 </body>
 </html>
