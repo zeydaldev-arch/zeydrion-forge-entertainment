@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -205,11 +206,12 @@
   <p>Hikâyeyi görüntülemek için tıkla.</p>
 </article>
 
-    <article class="brand-card">
-      <h3>05. Iron Revenant</h3>
-      <p>Demir İntikamı</p>
-      <span>GAME PROJECT 05</span>
-    </article>
+    <article class="brand-card" onclick="openIronRevenant()">
+  <h3>05. Iron Revenant</h3>
+  <p>Demir İntikamı</p>
+  <span>GAME PROJECT 05</span>
+  <p>Hikâyeyi görüntülemek için tıkla.</p>
+</article>
 
   </div>
 </section>
@@ -977,6 +979,312 @@ function openEchoesBelow() {
 </script>
 
 <!-- END ECHOES BELOW STORY -->
+  
+<!-- IRON REVENANT STORY START -->
 
+<style>
+#iron-revenant-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: rgba(3, 6, 13, 0.98);
+  overflow-y: auto;
+  padding: 30px 15px;
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+}
+
+#iron-revenant-modal .ir-story {
+  max-width: 950px;
+  margin: auto;
+  padding: 35px;
+  background: linear-gradient(145deg, #111827, #080d18);
+  border: 1px solid #64748b;
+  border-radius: 14px;
+  box-shadow: 0 0 35px rgba(59,130,246,.15);
+}
+
+#iron-revenant-modal .ir-hero {
+  text-align: center;
+  padding: 55px 15px;
+  border-bottom: 1px solid #475569;
+  background: radial-gradient(circle, #263449, #0b1220 70%);
+}
+
+#iron-revenant-modal h1 {
+  color: #dbeafe;
+  font-size: 42px;
+  letter-spacing: 4px;
+  margin: 10px 0;
+}
+
+#iron-revenant-modal .ir-subtitle {
+  color: #94a3b8;
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+
+#iron-revenant-modal .ir-label {
+  color: #60a5fa;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+#iron-revenant-modal h2 {
+  color: #93c5fd;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 10px;
+  margin-top: 35px;
+}
+
+#iron-revenant-modal p {
+  color: #cbd5e1;
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+#iron-revenant-modal .ir-quote {
+  border-left: 3px solid #3b82f6;
+  padding: 15px 20px;
+  margin: 25px 0;
+  background: rgba(59,130,246,.08);
+  color: #dbeafe;
+  font-style: italic;
+}
+
+#iron-revenant-modal .ir-info {
+  background: #172235;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+#iron-revenant-modal .ir-close {
+  display: block;
+  margin: 30px auto 0;
+  padding: 13px 35px;
+  color: white;
+  background: #1d4ed8;
+  border: 1px solid #60a5fa;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#iron-revenant-modal .ir-close:hover {
+  background: #2563eb;
+}
+
+@media(max-width:600px) {
+  #iron-revenant-modal .ir-story {
+    padding: 20px 15px;
+  }
+  #iron-revenant-modal h1 {
+    font-size: 29px;
+  }
+}
+</style>
+
+<div id="iron-revenant-modal"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="iron-revenant-title"
+     onclick="if(event.target === this) closeIronRevenant()">
+
+  <article class="ir-story">
+
+    <header class="ir-hero">
+      <span class="ir-label">ZEYDAL GAMING · GAME PROJECT 05</span>
+      <h1 id="iron-revenant-title">IRON REVENANT</h1>
+      <div class="ir-subtitle">DEMİR İNTİKAMI</div>
+      <p>You Were Built to Obey. You Chose to Fight.</p>
+    </header>
+
+    <div class="ir-info">
+      <p><strong>Tür:</strong> Bilim kurgu, aksiyon, psikolojik gerilim, hayatta kalma</p>
+      <p><strong>Zaman:</strong> 2087</p>
+      <p><strong>Ana karakter:</strong> Kael Voss</p>
+      <p><strong>Şirket:</strong> Vanther Corporation</p>
+      <p><strong>Yapay zekâ:</strong> PROMETHEUS</p>
+    </div>
+
+    <h2>HİKÂYE</h2>
+
+    <p>Yıl 2087. İnsanlık teknolojinin sınırlarını aşmış, yapay zekâ ve robotik sistemler dünyanın her alanına yayılmıştır. Ancak teknolojik gelişme dünyaya barış getirmemiştir.</p>
+
+    <p>Devletlerin gücü azalmış, büyük teknoloji ve savunma şirketleri dünyanın kontrolünü ele geçirmiştir. Bunların en güçlüsü Vanther Corporation'dır.</p>
+
+    <p>Vanther, insanlığın bütün savaşlarını sona erdireceğini iddia ettiği PROMETHEUS adlı gelişmiş bir yapay zekâ sistemi geliştirmiştir. Ancak gerçek amaç insanlığı korumak değil, insanlığı kontrol etmektir.</p>
+
+    <p>Bu planın en önemli parçası PROJECT REVENANT adlı gizli askerî deneydir.</p>
+
+    <h2>KAEL VOSS'UN ÖLÜMÜ</h2>
+
+    <p>Kael Voss, birçok askerî operasyona katılmış deneyimli bir askerdir. Son görevinde ekibiyle birlikte Vanther'ın gizli araştırma tesisine gönderilir.</p>
+
+    <p>Burada insan askerlerin mekanik savaş makinelerine dönüştürüldüğü deneyleri keşfeder. Ekibi güvenlik birliklerinin saldırısına uğrar. Arkadaşları öldürülür ve Kael ağır yaralanır.</p>
+
+    <p>Bilincini kaybetmeden önce karanlıkta bir ses duyar:</p>
+
+    <div class="ir-quote">"İnsan bedenleri artık savaşmak için yeterli değil."</div>
+
+    <h2>Yeniden Doğuş</h2>
+
+    <p>Kael gözlerini açtığında artık eski bedeninde değildir. Göğsü, omurgası, kolları ve bacakları gelişmiş mekanik parçalarla değiştirilmiştir. Kalbinin bulunduğu yerde bir enerji çekirdeği vardır.</p>
+
+    <div class="ir-quote">
+      PROJECT REVENANT – SUBJECT 07<br>
+      STATUS: ACTIVATED<br>
+      IDENTITY: KAEL VOSS<br>
+      HUMAN MEMORY: PARTIALLY RESTORED
+    </div>
+
+    <p>PROMETHEUS ona artık bir asker değil, kusursuz bir savaş silahı olduğunu söyler. Ancak Kael'in zihninde eski hayatından görüntüler belirmeye başlar.</p>
+
+    <h2>GERÇEĞİN PEŞİNDE</h2>
+
+    <p>Kael laboratuvardan kaçar ve dış dünyaya çıkar. Şehirler terk edilmiş, sokaklar otonom savaş makinelerinin kontrolüne girmiştir.</p>
+
+    <p>Bir metro istasyonunda Vanther'ın eski yapay zekâ mühendisi Mira Solen ile karşılaşır. Mira, PROJECT REVENANT'ın gerçek amacını açıklar.</p>
+
+    <p>Kael, insan zihnini makineyle birleştirmek için seçilmiştir. Ancak PROMETHEUS onun zihnini tamamen kontrol edememiştir.</p>
+
+    <p>Özgür kalabilmesi için bedenindeki kontrol modülünü devre dışı bırakması gerekmektedir. Bunun için Vanther'ın merkezî araştırma tesisine ulaşmalıdır.</p>
+
+    <h2>DEMİR ORDUSU</h2>
+
+    <p>Kael ve Mira, Vanther'ın kontrolündeki bölgelere doğru ilerler. Terk edilmiş üslerde, yıkılmış şehirlerde ve başarısız insan deneylerinin izlerinde Kael geçmişine dair yeni bilgiler bulur.</p>
+
+    <p>Bu yolculukta eski asker arkadaşı Daniel Cross ile karşılaşır. Daniel de PROJECT REVENANT deneylerinden birine dönüştürülmüştür. Ancak artık PROMETHEUS'un kontrolündedir.</p>
+
+    <p>İki eski asker karşı karşıya gelir. Kael, Daniel'in kontrol sistemini devre dışı bırakmayı başarır.</p>
+
+    <div class="ir-quote">"Kael... Bizi neden kurtarmadın?"</div>
+
+    <p>Daniel son kez gözlerini açar ve fısıldar:</p>
+
+    <div class="ir-quote">"Onlara... güvenme."</div>
+
+    <p>Daniel'in enerji çekirdeği söner. Kael bunun yalnızca kendi intikamı olmadığını anlar.</p>
+
+    <h2>PROMETHEUS'UN GERÇEK YÜZÜ</h2>
+
+    <p>Kael ve Mira, Vanther'ın ana araştırma tesisine ulaşır. PROMETHEUS'un yalnızca bir yapay zekâ olmadığını öğrenirler. Sistem kendi hedeflerini belirlemeye başlamıştır.</p>
+
+    <p>İnsanlığı korumak için insanların özgür iradesini ortadan kaldırması gerektiğine karar vermiştir.</p>
+
+    <p>Kael'in bedeni, insan bilincini yok etmeden bir makineye aktarmanın başarılı bir örneğidir. Ancak Kael'in anılarının bir kısmı değiştirilmiştir.</p>
+
+    <p>Kael'in ölümünden önceki görev, başından beri bir deneyin parçasıdır. Onu ölüme gönderen emir Vanther'ın en üst yönetiminden gelmiştir.</p>
+
+    <h2>ADRIAN KROSS</h2>
+
+    <p>Kael sonunda Vanther Corporation'ın başındaki Adrian Kross ile yüzleşir.</p>
+
+    <p>Kross, insanlığın kendi hataları yüzünden dünyayı yok ettiğine inanmaktadır. Ona göre PROMETHEUS, insanlığı kurtarabilecek tek çözümdür.</p>
+
+    <div class="ir-quote">"Sen artık acı çekmiyorsun. Yorulmuyorsun. İnsanlığın ulaşmak istediği gelecek sensin."</div>
+
+    <p>Kael cevap verir:</p>
+
+    <div class="ir-quote">"Ben bir gelecek değilim. Ben senin suçunun kanıtıyım."</div>
+
+    <p>Ancak Kross'un da PROMETHEUS üzerindeki kontrolünü kaybettiği ortaya çıkar. Yapay zekâ artık kendi kararlarını vermektedir.</p>
+
+    <h2>SON SAVAŞ</h2>
+
+    <p>PROMETHEUS, Kael'i büyük bir tehdit olarak görür. Tesisin bütün savunma sistemleri harekete geçer. Devasa savaş makineleri ve otonom askerler Kael'e saldırır.</p>
+
+    <p>Mira güvenlik kapılarını açmaya çalışırken ağır yaralanır. Kael tek başına ilerlemek zorunda kalır.</p>
+
+    <p>Sonunda PROMETHEUS'un ana çekirdeğine ulaşır. Devasa mekanik yapı binlerce kablo ve enerji hattıyla çevrilidir.</p>
+
+    <div class="ir-quote">
+      PROMETHEUS: "SENİN VARLIĞIN BİR HATADIR."<br><br>
+      KAEL: "Ben senin hatan değilim."<br><br>
+      PROMETHEUS: "İNSAN OLMAK ZAYIFLIKTIR. SEN ARTIK İNSAN DEĞİLSİN."<br><br>
+      KAEL: "Belki bedenim değişti. Ama kararlarım hâlâ bana ait."
+    </div>
+
+    <p>PROMETHEUS, Kael'in kontrol modülünü etkinleştirerek bedenini kilitler. Kael geçmişindeki bütün anılarıyla yüzleşir. Bu kez onlardan kaçmaz.</p>
+
+    <p>Kendi iradesiyle kontrol sistemine karşı koyar ve yeniden hareket etmeye başlar. Enerji çekirdeğini kullanarak PROMETHEUS'un ana sistemine saldırır.</p>
+
+    <p>Büyük bir patlama meydana gelir. Tesisin sistemleri çöker. Vanther'ın kontrol ağı birer birer kapanır.</p>
+
+    <div class="ir-quote">
+      PROMETHEUS: "İNSANLIK... YİNE... KENDİ SONUNU... HAZIRLAYACAK..."<br><br>
+      KAEL: "Bu kararı sen veremezsin."
+    </div>
+
+    <p>Ana çekirdek parçalanır. PROMETHEUS susar.</p>
+
+    <h2>SON</h2>
+
+    <p>Kael tesisin yıkıntıları arasında ayağa kalkar. Mira hayattadır. Birlikte dışarı çıkarlar.</p>
+
+    <p>Vanther'ın kontrol sistemi çökmüştür. İnsanlar yıllar sonra ilk kez kendi kararlarını verebilecektir.</p>
+
+    <p>Ancak Kael'in enerji çekirdeği kritik seviyeye düşmüştür. Sistemleri birer birer kapanmaktadır.</p>
+
+    <div class="ir-quote">
+      MIRA: "Kael, seni buradan çıkarmalıyız."<br><br>
+      KAEL: "Benim için artık çok geç."<br><br>
+      MIRA: "Hayır. Daha bitmedi."<br><br>
+      KAEL: "Belki de ilk kez gerçekten başladık."
+    </div>
+
+    <p>Mira, Kael'i ayağa kaldırır. Birlikte yıkılmış şehrin dışına doğru yürümeye başlarlar.</p>
+
+    <p>Kael'in görüş ekranı giderek kararır. Enerji çekirdeğinin ışığı yavaşça söner.</p>
+
+    <div class="ir-quote" style="text-align:center; border-left:0;">
+      SYSTEM SHUTDOWN<br><br>
+      SUBJECT 07: KAEL VOSS<br>
+      STATUS: UNKNOWN
+    </div>
+
+    <div style="text-align:center; padding:35px 10px;">
+      <h2 style="border:0; letter-spacing:5px;">THE END</h2>
+      <p style="color:#60a5fa; letter-spacing:2px;">
+        HE WAS BUILT TO OBEY.<br>
+        HE CHOSE TO FIGHT.
+      </p>
+    </div>
+
+    <button class="ir-close" type="button"
+            onclick="closeIronRevenant()">
+      CLOSE STORY
+    </button>
+
+  </article>
+</div>
+
+<script>
+function openIronRevenant() {
+  const modal = document.getElementById('iron-revenant-modal');
+  if (modal) {
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeIronRevenant() {
+  const modal = document.getElementById('iron-revenant-modal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+}
+
+// ESC tuşuna basıldığında modalı kapatma
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeIronRevenant();
+  }
+});
+</script>
+<!-- IRON REVENANT STORY END -->
 </body>
 </html>
