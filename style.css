@@ -73,7 +73,7 @@ backdrop-filter: blur(15px);
 }
 
 .navigation a:hover {
-  color: #ff4fa3;
+  color: var(--blue);
 }
 
 .hero {
